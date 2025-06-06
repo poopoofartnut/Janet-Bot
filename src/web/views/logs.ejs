@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logs</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bot Logs</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Recent Logs</h2>
+            <ul>
+                <% logs.forEach(log => { %>
+                    <li><%= log.timestamp %>: <%= log.message %></li>
+                <% }); %>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Discord Bot Portal</p>
+    </footer>
+</body>
+</html>
