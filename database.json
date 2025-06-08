@@ -1,0 +1,87 @@
+{
+  "commandLogs": [
+    {
+      "guildId": "1378866441457107075",
+      "userId": "1165157585993875516",
+      "command": "ping",
+      "timestamp": "2025-06-08T06:53:40.314Z",
+      "args": {},
+      "response": "Pong!"
+    },
+    {
+      "guildId": "1378866441457107075",
+      "userId": "1165157585993875516",
+      "command": "warn",
+      "timestamp": "2025-06-08T06:54:09.321Z",
+      "args": {
+        "user": "poopoofartnut",
+        "reason": "testing"
+      },
+      "response": "User \"poopoofartnut\" has been warned by \"poopoofartnut\" for: testing"
+    },
+    {
+      "guildId": "1378866441457107075",
+      "userId": "1165157585993875516",
+      "command": "jailsetup",
+      "timestamp": "2025-06-08T07:09:08.128Z",
+      "args": {},
+      "response": "Jail role and Prison channels are set up!"
+    },
+    {
+      "guildId": "1378866441457107075",
+      "userId": "1165157585993875516",
+      "command": "jail",
+      "timestamp": "2025-06-08T20:18:51.098Z",
+      "args": {
+        "user": "poopoofartnut",
+        "reason": "No reason provided"
+      },
+      "response": "User \"poopoofartnut\" has been jailed by \"poopoofartnut\" for: \"No reason provided\""
+    },
+    {
+      "guildId": "1378866441457107075",
+      "userId": "1165157585993875516",
+      "command": "unjail",
+      "timestamp": "2025-06-08T20:19:06.803Z",
+      "args": {
+        "user": "poopoofartnut"
+      },
+      "response": "User \"poopoofartnut\" has been unjailed by \"poopoofartnut\"."
+    },
+    {
+      "guildId": "1378919034808172574",
+      "userId": "1006298363609743391",
+      "command": "ping",
+      "timestamp": "2025-06-08T21:24:12.389Z",
+      "args": {},
+      "response": "Pong!"
+    },
+    {
+      "guildId": "1378919034808172574",
+      "userId": "1006298363609743391",
+      "command": "warn",
+      "timestamp": "2025-06-08T21:29:40.086Z",
+      "args": {
+        "user": "shadow_strike11",
+        "reason": "testing"
+      },
+      "response": "User \"shadow_strike11\" has been warned by \"shadow_strike11\" for: \"testing\""
+    },
+    {
+      "guildId": "1378866441457107075",
+      "userId": "1165157585993875516",
+      "command": "jailsetup",
+      "timestamp": "2025-06-08T21:39:39.729Z",
+      "args": {},
+      "response": "Jail role and Prison channels are set up!"
+    },
+    {
+      "guildId": "1378919034808172574",
+      "userId": "1006298363609743391",
+      "command": "jailsetup",
+      "timestamp": "2025-06-08T21:39:51.027Z",
+      "args": {},
+      "response": "Jail role and Prison channels are set up!"
+    }
+  ]
+}

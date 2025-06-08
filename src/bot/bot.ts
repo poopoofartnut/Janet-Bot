@@ -1,4 +1,4 @@
-import { Client, GatewayIntentBits, REST, Routes, Interaction } from 'discord.js';
+import { Client, GatewayIntentBits, REST, Routes, Interaction, ActivityType } from 'discord.js';
 import { getCommands, commandHandlers } from './commands/index';
 import { DISCORD_TOKEN } from '../config';
 import express, { Request, Response } from "express";
@@ -111,7 +111,9 @@ router.get("/callback", async (req: Request, res: Response): Promise<void> => {
 export async function startBot() {
     await registerCommands();
     await client.login(TOKEN);
+    await client.user?.setActivity('I’m not a person. I’m a Janet', { type: ActivityType.Playing });
 }
+
 
 export async function stopBot() {
     await client.destroy();
