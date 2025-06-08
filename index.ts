@@ -1,6 +1,7 @@
 import path from 'path';
+import session from 'express-session';
 
-// Discord Bot Portal imports
+// Discord Bot Portal wimports
 import { startBot as startDiscordBot } from './src/bot/bot';
 import express from 'express';
 import { json } from 'body-parser';
@@ -26,6 +27,13 @@ app.set('views', path.join(__dirname, 'src', 'web', 'views'));
 app.use(json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
+
+// ADD THIS:
+app.use(session({
+    secret: 'your-session-secret', // use a strong secret in production!
+    resave: false,
+    saveUninitialized: false
+}));
 
 // Use the main router for web endpoints
 app.use('/', router);

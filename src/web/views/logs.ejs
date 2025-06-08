@@ -12,16 +12,30 @@
     </header>
     <main>
         <section>
-            <h2>Recent Logs</h2>
-            <ul>
-                <% logs.forEach(log => { %>
-                    <li><%= log.timestamp %>: <%= log.message %></li>
-                <% }); %>
-            </ul>
+            <% Object.entries(logsByGuild).forEach(([guildName, logs]) => { %>
+                <h2><%= guildName %> - Recent Logs</h2>
+                <% if (logs.length === 0) { %>
+                    <p>No logs for this server.</p>
+                <% } else { %>
+                    <ul>
+                        <% logs.forEach(log => { %>
+                            <li>
+                                <strong><%= new Date(log.timestamp).toLocaleString() %></strong>:
+                                <code><%= log.command %></code>
+                                by <code><%= usernamesById[log.userId] || log.userId %></code>
+                                <br>
+                                Args: <%= JSON.stringify(log.args) %>
+                                <br>
+                                Response: <%= log.response %>
+                            </li>
+                        <% }); %>
+                    </ul>
+                <% } %>
+            <% }); %>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Discord Bot Portal</p>
+        <p>&copy; 2025 Discord Bot Portal</p>
     </footer>
 </body>
 </html>
